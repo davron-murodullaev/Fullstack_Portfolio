@@ -28,3 +28,8 @@ A semantic, accessible survey form that satisfies all FCC user stories.
 ---
 
 ## 📂 Project Structure
+
+<img width="2879" height="1716" alt="image" src="https://github.com/user-attachments/assets/8dbeae5e-23df-45e1-b714-3994258ce79d" />
+<img width="2877" height="1704" alt="image" src="https://github.com/user-attachments/assets/48d5c7bc-44aa-4d0e-a55b-67cafc383202" />
+
+
