@@ -1,0 +1,61 @@
+/* ✅ Body requirements */
+body {
+  background-color: rosybrown;          /* 4 */
+  font-family: Arial, sans-serif;       /* 5 */
+  margin: 0;
+}
+
+/* ✅ Paragraph spacing */
+p {
+  margin: 5px 0;                        /* 6 */
+}
+
+/* ✅ Links styling */
+a {
+  text-decoration: none;                /* 7 */
+  color: #0077b6;
+  font-weight: bold;
+}
+
+/* ✅ Card design */
+.business-card {
+  width: 300px;                         /* 9 */
+  background-color: #fff;               /* 10 */
+  padding: 20px;                        /* 11 */
+  margin-top: 100px;                    /* 12 */
+  margin-left: auto;                    /* 15 */
+  margin-right: auto;                   /* 15 */
+  text-align: center;                   /* 13 */
+  font-size: 16px;                      /* 14 */
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* ✅ Image */
+.profile-image {
+  max-width: 100%;                      /* 19 */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* ✅ Social section */
+.social-media {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-media a {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.social-media a:hover {
+  background: #0077b6;
+  color: #fff;
+}
