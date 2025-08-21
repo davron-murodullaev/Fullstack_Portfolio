@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    section { margin-bottom: 2rem; }
+    img { max-width: 150px; display:block; margin:1rem 0; }
+    label { display:block; margin:0.5rem 0 0.25rem; }
+    input { width:100%; padding:0.5rem; margin-bottom:1rem; }
+    button { padding:0.6rem 1.2rem; }
+  </style>
+</head>
+<body>
+  <!-- 1) Exactly ONE h1 -->
+  <h1>Checkout</h1>
+
+  <!-- 2) First section: Your Cart -->
+  <section>
+    <h2>Your Cart</h2>
+    <!-- 3) Image with alt text -->
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="3D cube product image">
+  </section>
+
+  <!-- 4) Second section: Payment Information -->
+  <section>
+    <h2>Payment Information</h2>
+
+    <!-- 5) Form inside the second section -->
+    <form action="#" method="post">
+      <!-- card-name -->
+      <label for="card-name">Cardholder Name</label>
+      <input id="card-name" name="card-name" type="text" required aria-required="true" placeholder="Full Name">
+
+      <!-- card-number -->
+      <label for="card-number">Card Number</label>
+      <input id="card-number" name="card-number" type="text" required aria-required="true" placeholder="1234 5678 9012 3456">
+
+      <!-- expiry -->
+      <label for="expiry">Expiry Date</label>
+      <input id="expiry" name="expiry" type="month" placeholder="MM/YYYY">
+
+      <!-- cvc -->
+      <label for="cvc">CVC</label>
+      <input id="cvc" name="cvc" type="number" placeholder="123">
+
+      <!-- submit -->
+      <button type="submit">Pay Now</button>
+    </form>
+  </section>
+</body>
+</html>
