@@ -1,4 +1,4 @@
-/* Base layout (portfolio-friendly, testlarga to'sqinlik qilmaydi) */
+/* Layout (portfolio-friendly) */
 * { box-sizing: border-box; }
 body {
   margin: 0;
@@ -9,6 +9,7 @@ body {
 }
 main { max-width: 760px; margin: 0 auto; }
 
+/* Todo list */
 .todo-list {
   list-style: none;
   padding: 0;
@@ -25,39 +26,23 @@ main { max-width: 760px; margin: 0 auto; }
 .todo-list input[type="checkbox"] { transform: translateY(2px); margin-right: 8px; }
 .todo-list label { font-weight: 600; }
 
-/* 9) sub-item ro'yxati labeldan keyin */
+/* Sub items (must come after the label) */
 .sub-item {
   list-style: disc;
   margin: 10px 0 0 24px;
   padding: 0;
 }
 
-/* ---- Link states (tests 14–18) ---- */
-/* 14) Default: underline yo'q, asosiy rang */
-.sub-item-link {
-  text-decoration: none;     /* no underline by default */
-  color: #60a5fa;            /* base link color (blue-400) */
-  transition: color .15s ease, outline-color .15s ease;
-  outline: none;
-}
+/* ===== Link state styling (fixes tests 14–18) ===== */
+/* No underline + base color */
+a { text-decoration: none; color: #60a5fa; }
 
-/* 18) Visited — rang o'zgaradi (visited HOVER va ACTIVEdan oldin keladi) */
-.sub-item-link:visited {
-  color: #a78bfa;            /* violet-400 */
-}
+/* LVFHA order: link/visited/focus/hover/active */
+a:visited { color: #a78bfa; }                 /* visited: purple */
+a:focus   { outline: 3px solid #fbbf24;       /* focus outline */
+            outline-offset: 2px; }
+a:hover   { color: #34d399; }                  /* hover: green */
+a:active  { color: #f87171; }                  /* active: red */
 
-/* 17) Focus — outline chiqadi */
-.sub-item-link:focus {
-  outline: 3px solid #fbbf24;  /* amber-400 */
-  outline-offset: 2px;
-}
-
-/* 15) Hover — rang o'zgaradi */
-.sub-item-link:hover {
-  color: #34d399;            /* emerald-400 */
-}
-
-/* 16) Active (click payti) — rang o'zgaradi */
-.sub-item-link:active {
-  color: #f87171;            /* red-400 */
-}
+/* Keep class for clarity (not required by tests) */
+.sub-item-link { transition: color .15s ease, outline-color .15s ease; }
