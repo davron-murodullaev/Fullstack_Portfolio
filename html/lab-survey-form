@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title> <!-- page title -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Minimal optional styles (testsga ta'sir qilmaydi) -->
+  <style>
+    :root { --bg:#0f172a; --panel:#111827; --text:#e5e7eb; --muted:#94a3b8; }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,Segoe UI,Roboto,Arial,sans-serif;display:grid;place-items:center;min-height:100vh}
+    .wrap{width:min(760px,92%);background:var(--panel);padding:1.25rem 1.5rem;border-radius:14px}
+    h1{margin:.25rem 0 .5rem}
+    p#description{color:var(--muted);margin:0 0 1rem}
+    label{display:block;margin:.75rem 0 .25rem}
+    input,select,textarea,button{width:100%;padding:.65rem;border-radius:10px;border:1px solid #222;background:#0b1220;color:var(--text)}
+    fieldset{border:1px solid #222;border-radius:10px;margin:1rem 0;padding:1rem}
+    legend{padding:0 .35rem;color:var(--muted)}
+    button{cursor:pointer}
+    .hint{color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <!-- 1–4) h1#title + p#description, both non-empty -->
+    <h1 id="title">Developer Experience Survey</h1>
+    <p id="description">Tell us about your background and preferences so we can improve our learning content.</p>
+
+    <!-- 5) form#survey-form -->
+    <form id="survey-form" action="#" method="post">
+      <!-- 6–9, 19, 22, 25, 28) NAME: input#name[type=text][required] with label#name-label + placeholder -->
+      <label id="name-label" for="name">Full Name</label>
+      <input id="name" name="name" type="text" required placeholder="e.g., Ada Lovelace" />
+
+      <!-- 10–13, 20, 23, 26, 29) EMAIL: input#email[type=email][required] with label#email-label + placeholder -->
+      <label id="email-label" for="email">Email</label>
+      <input id="email" name="email" type="email" required placeholder="e.g., ada@example.com" />
+
+      <!-- 14–18, 21, 24, 27, 30) NUMBER: input#number[type=number][min][max] with label#number-label + placeholder -->
+      <label id="number-label" for="number">Years of coding experience <span class="hint">(0–40)</span></label>
+      <input id="number" name="experience" type="number" min="0" max="40" placeholder="e.g., 2" />
+
+      <!-- 31–33) SELECT: #dropdown with ≥2 options -->
+      <label for="dropdown">Primary learning goal</label>
+      <select id="dropdown" name="goal">
+        <option value="">Select one…</option>
+        <option value="frontend">Front-End Development</option>
+        <option value="backend">Back-End Development</option>
+        <option value="fullstack">Full-Stack Development</option>
+      </select>
+
+      <!-- 34–38) RADIOS: ≥2 inputs type=radio, same name, each has value, in one group -->
+      <fieldset>
+        <legend>Preferred learning format</legend>
+        <label><input type="radio" name="format" value="videos"> Videos</label>
+        <label><input type="radio" name="format" value="text"> Text tutorials</label>
+        <label><input type="radio" name="format" value="projects"> Project-based</label>
+      </fieldset>
+
+      <!-- 39–40) CHECKBOXES: ≥2 inside form, each has value -->
+      <fieldset>
+        <legend>Topics you enjoy (select any)</legend>
+        <label><input type="checkbox" name="topics" value="html"> HTML</label>
+        <label><input type="checkbox" name="topics" value="css"> CSS</label>
+        <label><input type="checkbox" name="topics" value="javascript"> JavaScript</label>
+        <label><input type="checkbox" name="topics" value="python"> Python</label>
+      </fieldset>
+
+      <!-- 41) TEXTAREA inside form -->
+      <label for="comments">Additional comments</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Share any feedback or suggestions…"></textarea>
+
+      <!-- 42–44) SUBMIT with id=submit, type=submit, inside the form -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
