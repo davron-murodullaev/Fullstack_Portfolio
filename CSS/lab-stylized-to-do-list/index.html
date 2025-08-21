@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stylized To-Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Stylesheet (aniq va bitta rel) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <!-- 1) Bitta UL .todo-list -->
+    <ul class="todo-list">
+
+      <!-- 2–13) To‘rt LI: har birida checkbox+label, keyin UL.sub-item ichida A.sub-item-link (_blank) -->
+      <li>
+        <input type="checkbox" id="task-1">
+        <label for="task-1">Finish HTML Lab</label>
+        <ul class="sub-item">
+          <li>
+            <a class="sub-item-link" href="https://www.freecodecamp.org/learn/" target="_blank">
+              Related resource (HTML)
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <input type="checkbox" id="task-2">
+        <label for="task-2">Refactor CSS Styles</label>
+        <ul class="sub-item">
+          <li>
+            <a class="sub-item-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+              MDN CSS Docs
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <input type="checkbox" id="task-3">
+        <label for="task-3">Review Accessibility</label>
+        <ul class="sub-item">
+          <li>
+            <a class="sub-item-link" href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">
+              WCAG Overview
+            </a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <input type="checkbox" id="task-4">
+        <label for="task-4">Deploy Demo</label>
+        <ul class="sub-item">
+          <li>
+            <a class="sub-item-link" href="https://vercel.com/" target="_blank">
+              Deploy on Vercel
+            </a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </main>
+</body>
+</html>
