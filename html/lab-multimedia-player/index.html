@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multimedia Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* optional minimal styling; does not affect tests */
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; padding: 24px; }
+    section { margin: 1.5rem 0; }
+    h1 { margin-bottom: .5rem; }
+    audio, video { display: block; margin-top: .75rem; }
+  </style>
+</head>
+<body>
+  <!-- 1–2) Page title -->
+  <h1>My Multimedia Player</h1>
+
+  <!-- 3) First section -->
+  <section>
+    <!-- 4–5) Song title -->
+    <h2>Sailing Away</h2>
+
+    <!-- 6–11) Audio with controls + aria-label + source[src,type] -->
+    <audio controls aria-label="Audio player for the song Sailing Away">
+      <source
+        src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3"
+        type="audio/mpeg">
+      <!-- Fallback text (not required for tests) -->
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- 3) Second section -->
+  <section>
+    <!-- 12–13) Video title -->
+    <h2>The map() Method Explained</h2>
+
+    <!-- 14–20) Video with controls + width + aria-label + source[src,type] -->
+    <video
+      controls
+      width="600"
+      aria-label="Video player explaining JavaScript's map method">
+      <source
+        src="https://cdn.freecodecamp.org/curriculum/labs/What%20is%20the%20map%20method%20and%20how%20does%20it%20work.mp4"
+        type="video/mp4">
+
+      <!-- 21–24) Track with src, kind, srclang, label -->
+      <track
+        src="https://cdn.freecodecamp.org/curriculum/labs/subtitles-en.vtt"
+        kind="subtitles"
+        srclang="en"
+        label="English">
+
+      <!-- Fallback text -->
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- 3) Third section -->
+  <section>
+    <!-- 25–26) Transcript header -->
+    <h2>Transcript</h2>
+
+    <!-- 27) Transcript paragraph -->
+    <p>
+      In this video, we explore how JavaScript’s <code>Array.prototype.map</code>
+      creates a new array by applying a callback to each element. We cover syntax,
+      common patterns, and how to chain <code>map</code> with other array methods.
+    </p>
+  </section>
+</body>
+</html>
