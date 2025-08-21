@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Design a Movie Review Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* optional minimal styling; does not affect tests */
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; padding: 24px; }
+    img { max-width: 240px; height: auto; display: block; margin: 12px 0; }
+  </style>
+</head>
+<body>
+  <!-- 1) main element -->
+  <main>
+    <!-- 2) h1 (movie title) inside main -->
+    <h1>Rise Beyond II</h1>
+
+    <!-- 3) img directly below h1 with descriptive alt -->
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/rise-beyond-2.png"
+         alt="Poster for the film Rise Beyond II showing a lone explorer facing a glowing horizon" />
+
+    <!-- 4) description paragraph after the image -->
+    <p>
+      A determined explorer challenges impossible odds to uncover a cosmic secret
+      that could change humanity’s future. Stunning visuals meet a heartfelt story.
+    </p>
+
+    <!-- 5–9) rating paragraph with strong, span (10 stars), aria-hidden, and numeric rating in parentheses -->
+    <p>
+      <strong>Movie Rating:</strong>
+      <span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span> (9.0/10)
+    </p>
+
+    <!-- 10–12) h2 after second p with exact text -->
+    <h2>Cast Members</h2>
+
+    <!-- 13–15) ul with multiple li, each: <strong>Actor</strong> as Character -->
+    <ul>
+      <li><strong>James Holloway</strong> as Ethan Carter</li>
+      <li><strong>Mina Park</strong> as Dr. Lila Han</li>
+      <li><strong>Arjun Mehta</strong> as Commander Rao</li>
+      <li><strong>Sofia Alvarez</strong> as Ava Brooks</li>
+    </ul>
+  </main>
+</body>
+</html>
