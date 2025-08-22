@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Confidential Email</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 1) main#email -->
+  <main id="email">
+    <!-- 7–8, 17–20) stamps inside #email -->
+    <div id="confidential">CONFIDENTIAL</div>
+    <div id="top-secret">TOP SECRET</div>
+
+    <!-- 21–23) at least three paragraphs; each has .blurred spans with content -->
+    <p>
+      Dear <span class="blurred">Agent A-71</span>, your clearance for
+      operation <span class="blurred">ORION</span> has been approved.
+    </p>
+    <p>
+      Rendezvous at <span class="blurred">Sector 9, Gate C</span> on
+      <span class="blurred">22:30 CET</span>. Do not share this message.
+    </p>
+    <p>
+      Use key phrase <span class="blurred">“Silent Sky”</span> upon entry.
+      Destroy this email after reading.
+    </p>
+  </main>
+</body>
+</html>
