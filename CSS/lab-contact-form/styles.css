@@ -1,0 +1,93 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #0f172a;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* .form-container visuals (already passing) */
+.form-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 420px;
+  box-shadow: 0 16px 36px rgba(0,0,0,.18);
+}
+
+form { display: flex; flex-direction: column; }
+
+/* Labels: margin + color (already passing) */
+label {
+  margin: 10px 0 6px;
+  color: #334155;
+  font-weight: 600;
+}
+
+/* ---- CRITICAL FOR TESTS 20 & 21: explicit, separate rules ---- */
+input {
+  width: 100%;                /* width */
+  padding: 12px;              /* padding */
+  margin-bottom: 14px;        /* bottom margin */
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  color: #0f172a;
+  background-color: #f8fafc;  /* explicit background-color */
+}
+
+textarea {
+  width: 100%;                /* width */
+  padding: 12px;              /* padding */
+  margin-bottom: 14px;        /* bottom margin */
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  color: #0f172a;
+  background-color: #f8fafc;  /* explicit background-color */
+}
+
+/* Optional focus UX */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96,165,250,.25);
+}
+
+/* ---- CRITICAL FOR TESTS 22–24: use background-color (not shorthand) ---- */
+button[type="submit"] {
+  background-color: #3b82f6;  /* explicit background color */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 1.05rem;         /* explicit font size */
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .1s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2563eb;  /* background changes on hover */
+  transform: translateY(-1px);
+}
+
+/* ==== BUTTON RULES — tests 22–24 ==== */
+button {
+  background-color: #3b82f6;  /* 22) explicit background color */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 18px;            /* 23) explicit, defaultdan farqli font-size */
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .1s ease;
+}
+
+/* 24) hover payti background-color o'zgarishi shart */
+button:hover {
+  background-color: #2563eb;  /* hover: background o'zgaradi */
+  transform: translateY(-1px);
+}
