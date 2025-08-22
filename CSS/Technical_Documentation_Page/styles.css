@@ -1,0 +1,85 @@
+@media (min-width: 679px) or (max-width: 1199p) {
+  #navbar {
+    width: 300px;
+    height: 50px;
+  }
+}
+
+:root { --nav-width: 280px; }
+html { scroll-behavior: smooth; }
+body {
+margin: 0;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+line-height: 1.6;
+}
+
+
+/* Navbar fixed on the left and always visible */
+#navbar {
+position: fixed;
+top: 0;
+left: 0; /* left edge of the window */
+bottom: 0;
+width: var(--nav-width);
+padding: 1rem;
+border-right: 1px solid #e5e7eb;
+overflow-y: auto;
+background: #ffffff;
+}
+#navbar header {
+font-weight: 700;
+font-size: 1.25rem;
+margin-bottom: 0.75rem;
+}
+#navbar ul { list-style: none; margin: 0; padding: 0; }
+#navbar .nav-link {
+display: block;
+padding: 0.5rem 0;
+text-decoration: none;
+}
+#navbar .nav-link:hover, #navbar .nav-link:focus { text-decoration: underline; }
+
+
+/* Main content pushed to the right of navbar */
+#main-doc {
+margin-left: calc(var(--nav-width) + 16px);
+padding: 2rem 1.5rem;
+}
+
+
+.main-section { margin-bottom: 2.5rem; }
+.main-section > header {
+font-size: 1.5rem;
+font-weight: 700;
+margin-bottom: 0.5rem;
+}
+
+
+/* Code blocks */
+code {
+display: block;
+background: #f9fafb;
+border: 1px solid #e5e7eb;
+border-radius: 6px;
+padding: 0.75rem;
+margin: 0.5rem 0;
+white-space: pre-wrap;
+overflow-x: auto;
+}
+
+
+/* Lists inside content */
+ul { padding-left: 1.25rem; }
+
+
+/* Media query (required by tests) */
+@media (max-width: 768px) {
+:root { --nav-width: 220px; }
+#main-doc { margin-left: calc(var(--nav-width) + 12px); }
+}
+
+
+/* Optional: reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+html { scroll-behavior: auto; }
+}
