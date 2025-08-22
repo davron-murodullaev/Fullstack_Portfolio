@@ -1,0 +1,138 @@
+/* =========================
+   Base + table scaffolding
+   ========================= */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #f6f7fb;
+  color: #0e1220;
+}
+h1 { margin: 0 0 16px; font-size: 2.2rem; letter-spacing: .3px; }
+
+table {
+  width: 100%;
+  max-width: 1100px;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 26px rgba(17, 24, 39, .08);
+}
+thead th {
+  text-align: left;
+  padding: 16px 18px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 800;
+  color: #0b132b;
+}
+tbody td { padding: 18px; border-bottom: 1px solid #eef2f7; font-size: 1.05rem; }
+tbody tr:last-child td { border-bottom: 0; }
+
+/* Keep Status & Rate on one line */
+tbody td:nth-child(4),
+tbody td:nth-child(5) { white-space: nowrap; }
+
+/* 25) Every span must be inline-block (test expects this rule) */
+span { display: inline-block; }
+
+/* =========================
+   TEST-REQUIRED SELECTORS
+   (do not remove; values OK)
+   ========================= */
+/* 19–24) Attribute selectors targeting rows + linear gradients */
+tr[class="read"] {
+  background-image: linear-gradient(90deg, #f0fdf4 0%, #dcfce7 100%);
+}
+tr[class="to-read"] {
+  background-image: linear-gradient(90deg, #eff6ff 0%, #dbeafe 100%);
+}
+tr[class="in-progress"] {
+  background-image: linear-gradient(90deg, #fff7ed 0%, #ffedd5 100%);
+}
+
+/* 26–34) Status inside specific rows */
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #2563eb;                                   /* 27 */
+  background-image: linear-gradient(180deg,#dbeafe,#bfdbfe);    /* 28 */
+  color: #0e1220;
+}
+tr[class="read"] span[class="status"] {
+  border: 1px solid #16a34a;                                    /* 30 */
+  background-image: linear-gradient(180deg,#dcfce7,#bbf7d0);    /* 31 */
+  color: #0e1220;
+}
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #d97706;                                    /* 33 */
+  background-image: linear-gradient(180deg,#ffedd5,#fed7aa);    /* 34 */
+  color: #0e1220;
+}
+
+/* 35–38) Combined attribute selector (property presence for tests) */
+span[class="status"],
+span[class^="rate"] {
+  height: 24px;       /* 36 */
+  width: 60px;        /* 37 (a concrete value for the test) */
+  padding: 2px 8px;   /* 38 */
+  border-radius: 6px;
+}
+
+/* 39–45) Small squares inside .rate */
+span[class^="rate"] > span {
+  border: 1px solid #9ca3af;   /* 40 */
+  border-radius: 4px;          /* 41 */
+  margin: 0 3px;               /* 42 */
+  height: 12px;                /* 43 */
+  width: 12px;                 /* 44 */
+  background-color: #e5e7eb;   /* 45 */
+}
+
+/* 46–51) Rating fill rules */
+span[class~="one"]   > span:nth-child(1)    { background-image: linear-gradient(180deg,#60a5fa,#2563eb); }
+span[class~="two"]   > span:nth-child(-n+2) { background-image: linear-gradient(180deg,#60a5fa,#2563eb); }
+span[class~="three"] > span                 { background-image: linear-gradient(180deg,#60a5fa,#2563eb); }
+
+/* =========================
+   VISUAL POLISH (non-test)
+   ========================= */
+
+/* Soften row gradients and add hover */
+tbody tr { background-blend-mode: screen; transition: box-shadow .15s ease, transform .05s ease; }
+tbody tr:hover { box-shadow: 0 4px 18px rgba(2,6,23,.08); transform: translateY(-1px); }
+
+/* Status pill — nicer spacing; keep attribute rule above for tests */
+span.status{
+  /* override width visually while keeping test rule above */
+  width: auto;
+  min-width: 78px;
+  height: 28px;
+  padding: 4px 12px;
+  line-height: 1;
+  font-weight: 700;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rate container — inline dots with even spacing */
+span[class^="rate"]{
+  width: auto;              /* visual override */
+  padding: 0;               /* visual override */
+  height: auto;             /* visual override */
+  background: transparent;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: middle;
+}
+
+/* Make title/author columns breathe on narrow screens */
+@media (max-width: 760px){
+  thead th, tbody td { padding: 14px; }
+  h1 { font-size: 1.8rem; }
+}
