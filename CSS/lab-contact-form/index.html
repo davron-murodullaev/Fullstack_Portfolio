@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Link stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 1) Container -->
+  <div class="form-container">
+    <!-- 2) Form inside container -->
+    <form action="#" method="post">
+      <!-- 3) h2 with text -->
+      <h2>Get in Touch</h2>
+
+      <!-- 11) Label for #name -->
+      <label for="name">Full Name</label>
+      <!-- 4–5) text input with id, name, required -->
+      <input type="text" id="name" name="name" required placeholder="e.g., Jane Doe" />
+
+      <!-- 12) Label for #email -->
+      <label for="email">Email Address</label>
+      <!-- 6–7) email input with id, name, required -->
+      <input type="email" id="email" name="email" required placeholder="e.g., jane@example.com" />
+
+      <!-- 13) Label for #message -->
+      <label for="message">Message</label>
+      <!-- 8) textarea with id, name, required -->
+      <textarea id="message" name="message" rows="5" required placeholder="How can I help?"></textarea>
+
+      <!-- 9–10) Submit button with type=submit and text 'Submit' -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
