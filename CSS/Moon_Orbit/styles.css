@@ -1,0 +1,71 @@
+/* 1) Center everything on the page using Flexbox and 100vh */
+html, body { height: 100%; }
+body {
+  height: 100vh;                  /* required: 100% of viewport height */
+  display: flex;                  /* required: flex layout */
+  justify-content: center;        /* required: center horizontally */
+  align-items: center;            /* required: center vertically */
+  margin: 0;
+  background: radial-gradient(circle at 50% 40%, #0b1220 0%, #060a12 60%, #03060b 100%);
+  overflow: hidden;
+}
+
+/* 2) .space box centered, relative positioning, 200x200 */
+.space {
+  position: relative;  /* required */
+  width: 200px;        /* required */
+  height: 200px;       /* required */
+}
+
+/* 3) Earth: absolute; center via top/left 50% + translate(-50%,-50%); 100x100; round + color */
+.earth {
+  position: absolute;        /* required */
+  top: 50%;                  /* required */
+  left: 50%;                 /* required */
+  transform: translate(-50%, -50%);  /* required */
+  width: 100px;              /* required */
+  height: 100px;             /* required */
+  border-radius: 50%;        /* required: circular */
+  background: radial-gradient(circle at 35% 35%, #3aa7ff, #1b62ff 60%, #0b2a7a 100%); /* required: bg color */
+  box-shadow:
+    0 0 25px rgba(58,167,255,.35),
+    inset -8px -10px 16px rgba(0,0,0,.35);
+}
+
+/* 4) Orbit: absolute; 200x200; top/left 50% + transform in keyframes with translate(-50%,-50%) */
+.orbit {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 1px dashed rgba(255,255,255,.2);
+
+  transform: translate(-50%, -50%);   /* ✅ markazga qo‘yish */
+  animation: orbit 5s linear infinite;
+}
+
+
+/* 5) Moon: absolute; 30x30; align top + center horizontally; adjust with translateX(-50%) */
+.moon {
+  position: absolute;        /* required */
+  width: 30px;               /* required */
+  height: 30px;              /* required */
+  top: 0;                    /* required: align top edge */
+  left: 50%;                 /* required: move left edge to center (50%) */
+  transform: translateX(-50%); /* required: adjust horizontally by -50% */
+  border-radius: 50%;        /* required: circular */
+  background: radial-gradient(circle at 40% 40%, #fff, #cfd7ff 60%, #9fb0ff 100%); /* required: bg color */
+  box-shadow:
+    0 0 12px rgba(255,255,255,.6),
+    inset -6px -6px 10px rgba(0,0,0,.25);
+}
+
+/* 6) Keyframes: must be named 'orbit' and include
+      0% { transform: rotate(0deg) translate(-50%, -50%); }
+     100% { transform: rotate(360deg) translate(-50%, -50%); } in this order */
+@keyframes orbit {
+  0%   { transform: rotate(0deg) translate(-50%, -50%); }
+  100% { transform: rotate(360deg) translate(-50%, -50%); }
+}
