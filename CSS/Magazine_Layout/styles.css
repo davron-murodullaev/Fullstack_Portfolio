@@ -1,0 +1,49 @@
+/* Main grid container */
+.magazine-cover {
+  display: grid; /* required */
+  width: 90vw; /* occupy most of viewport width */
+  margin: 0 auto;
+  gap: 10px; /* required gap */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal parts */
+  grid-template-rows: auto 1fr 1fr; /* auto, then two equal rows */
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "small-article1 small-article2 cover-image";
+}
+
+/* Assign grid areas */
+.title {
+  grid-area: title;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  background: #f1f5f9;
+}
+.feature-article {
+  grid-area: feature-article;
+  background: #e0f2fe;
+  padding: 1rem;
+}
+.small-article1 {
+  grid-area: small-article1;
+  background: #bae6fd;
+  padding: 1rem;
+}
+.small-article2 {
+  grid-area: small-article2;
+  background: #7dd3fc;
+  padding: 1rem;
+}
+.cover-image {
+  grid-area: cover-image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+}
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+}
