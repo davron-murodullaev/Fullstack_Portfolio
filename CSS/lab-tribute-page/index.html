@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tribute to Ada Lovelace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 1) Everything goes inside main#main -->
+  <main id="main">
+    <!-- 2–4) Title -->
+    <h1 id="title">Ada Lovelace</h1>
+
+    <!-- 5) A figure with id="img-div" -->
+    <figure id="img-div">
+      <!-- 6–7) Image with id="image" (descendant of #img-div) -->
+      <img
+        id="image"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg"
+        alt="Portrait of Ada Lovelace, 19th-century mathematician and writer"
+      />
+      <!-- 8–10) Caption describing the image -->
+      <figcaption id="img-caption">
+        Ada Lovelace, often called the first computer programmer, portrayed in a 19th-century painting.
+      </figcaption>
+    </figure>
+
+    <!-- 11–12) Tribute info text -->
+    <section id="tribute-info">
+      <p>
+        Augusta Ada King, Countess of Lovelace (1815–1852) collaborated with Charles Babbage on the
+        Analytical Engine and wrote a visionary set of notes that outlined how machines could process
+        symbols, compose music, and go beyond calculation—ideas that anticipated modern computing.
+      </p>
+      <p>
+        Her Note G, which included an algorithm to compute Bernoulli numbers, is widely regarded as
+        the first published computer program. Lovelace’s perspective on the creative potential of
+        computation continues to inspire scientists and engineers.
+      </p>
+    </section>
+
+    <!-- 13–15) External link with id, href, and target="_blank" -->
+    <p class="more">
+      Learn more on
+      <a
+        id="tribute-link"
+        href="https://en.wikipedia.org/wiki/Ada_Lovelace"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Wikipedia</a>.
+    </p>
+  </main>
+</body>
+</html>
