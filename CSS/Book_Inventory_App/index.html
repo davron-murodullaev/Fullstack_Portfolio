@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Book Inventory App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Single h1 with exact text -->
+  <h1>Book Inventory</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- data rows must have one of: read | to-read | in-progress -->
+      <tr class="read">
+        <td>Clean Code</td>
+        <td>Robert C. Martin</td>
+        <td>Software Engineering</td>
+        <td><span class="status">Read</span></td>
+        <!-- rate as first class; for read rows add one|two|three -->
+        <td>
+          <span class="rate two">
+            <span></span><span></span><span></span>
+          </span>
+        </td>
+      </tr>
+
+      <tr class="to-read">
+        <td>Designing Data-Intensive Applications</td>
+        <td>Martin Kleppmann</td>
+        <td>Databases</td>
+        <td><span class="status">To Read</span></td>
+        <td>
+          <span class="rate">
+            <span></span><span></span><span></span>
+          </span>
+        </td>
+      </tr>
+
+      <tr class="in-progress">
+        <td>The Pragmatic Programmer</td>
+        <td>Andrew Hunt, David Thomas</td>
+        <td>Software Craft</td>
+        <td><span class="status">In Progress</span></td>
+        <td>
+          <span class="rate">
+            <span></span><span></span><span></span>
+          </span>
+        </td>
+      </tr>
+
+      <tr class="read">
+        <td>You Don’t Know JS Yet</td>
+        <td>Kyle Simpson</td>
+        <td>JavaScript</td>
+        <td><span class="status">Read</span></td>
+        <td>
+          <span class="rate three">
+            <span></span><span></span><span></span>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
