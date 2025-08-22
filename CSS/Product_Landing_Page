@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header + Nav -->
+    <header id="header">
+      <a href="#hero" class="brand">
+        <img
+          id="header-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+          alt="Brand logo"
+        />
+        <span class="brand-name">SwiftGadgets</span>
+      </a>
+
+      <nav id="nav-bar" aria-label="Primary">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <h1>Meet the next-gen gadget</h1>
+      <p>Lightweight. Powerful. Built for creators on the move.</p>
+      <a class="cta" href="#pricing">Shop now</a>
+    </section>
+
+    <!-- Embedded Product Video -->
+    <section class="video-wrap">
+      <h2 class="section-title">See it in action</h2>
+      <!-- You can use <iframe> OR <video>. Tests allow either. -->
+      <iframe
+        id="video"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="Product demo video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+      <article class="feature">
+        <h3>Ultra portable</h3>
+        <p>1.1kg magnesium alloy body with all-day battery life.</p>
+      </article>
+      <article class="feature">
+        <h3>Creator power</h3>
+        <p>Blazing fast performance for editing, coding, and rendering.</p>
+      </article>
+      <article class="feature">
+        <h3>Connected</h3>
+        <p>Wi-Fi 6E, BT 5.3, and instant device pairing across your stack.</p>
+      </article>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+      <div class="card">
+        <h3>Starter</h3>
+        <p class="price">$499</p>
+        <ul>
+          <li>Base performance</li>
+          <li>8 GB RAM</li>
+          <li>128 GB storage</li>
+        </ul>
+        <a href="#contact" class="btn">Choose</a>
+      </div>
+      <div class="card popular">
+        <h3>Pro</h3>
+        <p class="price">$799</p>
+        <ul>
+          <li>Creator performance</li>
+          <li>16 GB RAM</li>
+          <li>512 GB storage</li>
+        </ul>
+        <a href="#contact" class="btn">Choose</a>
+      </div>
+      <div class="card">
+        <h3>Max</h3>
+        <p class="price">$1099</p>
+        <ul>
+          <li>Max performance</li>
+          <li>32 GB RAM</li>
+          <li>1 TB storage</li>
+        </ul>
+        <a href="#contact" class="btn">Choose</a>
+      </div>
+    </section>
+
+    <!-- Signup Form -->
+    <section id="contact" class="signup">
+      <h2 class="section-title">Get product updates & offers</h2>
+      <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+        <label for="email" class="sr-only">Email address</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input id="submit" type="submit" value="Notify me" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> SwiftGadgets. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // small enhancement: current year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
