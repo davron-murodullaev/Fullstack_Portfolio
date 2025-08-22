@@ -1,0 +1,51 @@
+/* Aesthetic base */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #111827;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+/* 8–11) #playing-cards uses flexbox, centers, wraps, and has 20px gap */
+#playing-cards {
+  display: flex;             /* 8 */
+  justify-content: center;   /* 9 */
+  flex-wrap: wrap;           /* 10 */
+  gap: 20px;                 /* 11 */
+}
+
+/* 3,12–13) .card is a flex container with width & height and space-between */
+.card {
+  display: flex;                     /* 12 */
+  justify-content: space-between;    /* 13 */
+  width: 140px;                      /* 3: width */
+  height: 200px;                     /* 3: height */
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.18);
+}
+
+/* 14–16) item-level alignment */
+.left  { align-self: flex-start; }   /* 14 */
+.right { align-self: flex-end; }     /* 16 */
+
+/* 15,17,18) .middle align-self + column flex layout */
+.middle {
+  align-self: center;       /* 15 */
+  display: flex;            /* 17 */
+  flex-direction: column;   /* 18 */
+  align-items: center;
+  gap: 4px;
+}
+
+/* Small typography */
+.left, .right { text-align: center; font-weight: 700; }
+.suit, .pip { font-size: 18px; line-height: 1; }
+.red { color: #dc2626; } /* hearts/diamonds */
