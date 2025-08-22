@@ -28,4 +28,4 @@ All **tests (1–15)** from the lab are satisfied ✅.
 
 ## 📂 Project Structure
 
-![Uploading image.png…]()
+<img width="2879" height="1701" alt="image" src="https://github.com/user-attachments/assets/86341cf6-5f8c-456c-bbdf-308e0c84ddb7" />
