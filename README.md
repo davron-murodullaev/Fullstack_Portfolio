@@ -1,50 +1,30 @@
-Full-Stack Developer Labs
+This project contains a basic HTML structure to get you started. Check our tutorials for frontend development to learn the basics of HTML and CSS. 🦄
 
-This repository contains my solutions to the **freeCodeCamp Full-Stack Developer** curriculum.  
-Each lab folder includes: ✅ passing tests, 📝 a short write-up, 🖼️ screenshots, and 🔗 a live demo when possible.
+🏗 What's next?
+Build your project however you like using HTML, CSS and JavaScript.
 
----
+Use these four files as your starting point:
 
-## 📚 Labs Index
+README.md: This is the file that you are reading now. You can change the text in this file to leave information to others about your website - or delete it.
+index.html: This is the default page for your space, where you write HTML, the standard markup language for creating web pages.
+styles.css: Use the CSS file to style your content and change the look of your space with beautiful colors, fonts and much more.
+scripts.js: Use this file to make your website dynamic and interactive with JavaScript.
+Note: The styles.css and scripts.js files link into the index.html file so that they are all connected.
 
-### 1. HTML
-- [Business Card](html/lab-business-card)  
-- [Travel Agency Page](html/lab-travel-agency)  
-- [Checkout Page](html/lab-checkout-page)  
+🎨 Where to find everything
+Fonts: Add your favorite from Google fonts.
+Go to tutorial about fonts
 
-### 2. CSS
-- [Magazine Layout](css/lab-magazine)  
-- [City Skyline](css/lab-city-skyline)  
-- [Personal Portfolio Page](css/lab-portfolio-page)  
+Icons: Add icons with Fontawesome and their free library.
+Go to tutorial about Fontawesome
 
-### 3. JavaScript
-- [To-Do App](javascript/lab-todo-app)  
-- [Calculator](javascript/lab-calculator)  
+Images: Upload images and add their URLs to your code.
+Go to article about how to upload files
 
-### 4. Front End Libraries (React)
-- [Tic-Tac-Toe](frontend-libraries/lab-react-tic-tac-toe)  
-- [Random Quote Machine](frontend-libraries/lab-random-quote-machine)  
+⚡️ Tip: Set up Google Analytics to get valuable insights about your space and visitors.
 
-### 5. Python
-- [Number Analyzer](python/lab-number-analyzer)  
-- [API Calls](python/lab-api-calls)  
+⛑ Need support?
+Join our Discord community and ask questions in the #spaces-general channel.
 
-### 6. Relational Databases
-- [SQL Queries](databases/lab-sql-queries)  
-- [Library System](databases/lab-library-system)  
-
-### 7. Backend JavaScript
-- [Express API](backend-js/lab-express-api)  
-- [Auth System](backend-js/lab-auth-system)  
-
-*(CSS, JavaScript, Front End Libraries, Python, Databases, Backend JS labs will be added as I progress.)*
-
----
-
-## 🚀 How to Run Locally
-```bash
-git clone https://github.com/<your-username>/fcc-fullstack-labs
-cd fcc-fullstack-labs
-
-# For static labs
-cd lab-business-card && open index.html   # (Windows: start, Linux: xdg-open)
+🚀 Upgrade to Pro
+Upgrade your account to boost your space and take your projects to the next level; more requests, more storage and more power for up to 10 spaces.
