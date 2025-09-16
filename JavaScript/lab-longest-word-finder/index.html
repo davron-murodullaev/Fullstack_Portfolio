@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Longest Word Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Longest Word Finder</h1>
+    <p>Enter a sentence to find the length of its longest word.</p>
+
+    <div class="card">
+      <input
+        type="text"
+        id="sentenceInput"
+        placeholder="Type a sentence here..."
+        aria-label="Sentence input"
+      />
+      <button id="checkBtn">Find Longest Word</button>
+      <p id="result" role="status" aria-live="polite"></p>
+    </div>
+
+    <section class="examples">
+      <h2>Example</h2>
+      <code>findLongestWordLength("The quick brown fox jumped over the lazy dog") // 6</code>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
