@@ -1,38 +1,39 @@
-# freeCodeCamp Full-Stack Developer Portfolio
-Full-Stack Developer Labs
+# Fullstack Portfolio  
 
-Bu repoda men **freeCodeCamp Full-Stack Developer** kursidagi barcha lab va loyihalarimni jamlayman.  
-Har bir kurs uchun alohida papka ochilgan va ichida `README.md` bor.
-This repository contains my solutions to the **freeCodeCamp Full-Stack Developer** curriculum.  
-Each lab folder includes: ✅ passing tests, 📝 a short write-up, 🖼️ screenshots, and 🔗 a live demo when possible.
+This repository contains my hands-on projects and practice labs from **FreeCodeCamp** and other learning resources.  
+The goal is to document progress in **frontend development, backend fundamentals, and JavaScript algorithms** while building a structured portfolio.  
 
 ---
 
-## 📚 Kurs bo‘yicha bo‘limlar
-## 📚 Labs Index
-
-### 1. HTML
-- [Business Card](html/lab-business-card)  
-@@ -37,18 +37,14 @@ Har bir kurs uchun alohida papka ochilgan va ichida `README.md` bor.
-- [Express API](backend-js/lab-express-api)  
-- [Auth System](backend-js/lab-auth-system)  
-
-### 8. Career
-- Kurs davomida yozilgan **blog postlar, rezyume va maslahatlar**.
-*(CSS, JavaScript, Front End Libraries, Python, Databases, Backend JS labs will be added as I progress.)*
+## 📚 Learning Paths Covered
+- **HTML & CSS** (layouts, responsive design, UI components)
+- **JavaScript Algorithms & Data Structures**
+- **Frontend mini-projects** (interactive pages and apps)
 
 ---
 
-## 🚀 Ishga tushirish
-- HTML/CSS loyihalar → `index.html` faylini brauzerda oching  
-- React / Backend loyihalar → `npm install && npm run dev`  
-- Python loyihalar → `python main.py`
-## 🚀 How to Run Locally
-```bash
-git clone https://github.com/<your-username>/fcc-fullstack-labs
-cd fcc-fullstack-labs
+## 🌐 HTML Projects
+- [Business Card](html/lab-business-card/)  
+- [Travel Agency Page](html/lab-travel-agency/)  
+- [Checkout Page](html/lab-checkout-page/)  
 
 ---
 
-## 📌 Maqsad
-- Har kursni yakunlaganim sari GitHub’da tartibli portfolio qilib borish  
+## 🎨 CSS Projects
+- [Magazine Layout](css/lab-magazine-layout/)  
+- [City Skyline](css/lab-city-skyline/)  
+- [Personal Portfolio Page](css/lab-portfolio/)  
+
+---
+
+## ⚡ JavaScript Projects
+- [Longest Word Finder](javascript/lab-longest-word-finder/)  
+- [Truncate a String](javascript/lab-truncate-string/)  
+- [Vowel & Consonant Counter](javascript/lab-vowel-consonant-counter/)  
+- [JSON Parse & Stringify Demo](javascript/lab-json-parse-stringify/)  
+
+*(more labs will be added as progress continues)*  
+
+---
+
+## 🗂️ Repository Structure
