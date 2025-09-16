@@ -1,30 +1,38 @@
-This project contains a basic HTML structure to get you started. Check our tutorials for frontend development to learn the basics of HTML and CSS. 🦄
+# freeCodeCamp Full-Stack Developer Portfolio
+Full-Stack Developer Labs
 
-🏗 What's next?
-Build your project however you like using HTML, CSS and JavaScript.
+Bu repoda men **freeCodeCamp Full-Stack Developer** kursidagi barcha lab va loyihalarimni jamlayman.  
+Har bir kurs uchun alohida papka ochilgan va ichida `README.md` bor.
+This repository contains my solutions to the **freeCodeCamp Full-Stack Developer** curriculum.  
+Each lab folder includes: ✅ passing tests, 📝 a short write-up, 🖼️ screenshots, and 🔗 a live demo when possible.
 
-Use these four files as your starting point:
+---
 
-README.md: This is the file that you are reading now. You can change the text in this file to leave information to others about your website - or delete it.
-index.html: This is the default page for your space, where you write HTML, the standard markup language for creating web pages.
-styles.css: Use the CSS file to style your content and change the look of your space with beautiful colors, fonts and much more.
-scripts.js: Use this file to make your website dynamic and interactive with JavaScript.
-Note: The styles.css and scripts.js files link into the index.html file so that they are all connected.
+## 📚 Kurs bo‘yicha bo‘limlar
+## 📚 Labs Index
 
-🎨 Where to find everything
-Fonts: Add your favorite from Google fonts.
-Go to tutorial about fonts
+### 1. HTML
+- [Business Card](html/lab-business-card)  
+@@ -37,18 +37,14 @@ Har bir kurs uchun alohida papka ochilgan va ichida `README.md` bor.
+- [Express API](backend-js/lab-express-api)  
+- [Auth System](backend-js/lab-auth-system)  
 
-Icons: Add icons with Fontawesome and their free library.
-Go to tutorial about Fontawesome
+### 8. Career
+- Kurs davomida yozilgan **blog postlar, rezyume va maslahatlar**.
+*(CSS, JavaScript, Front End Libraries, Python, Databases, Backend JS labs will be added as I progress.)*
 
-Images: Upload images and add their URLs to your code.
-Go to article about how to upload files
+---
 
-⚡️ Tip: Set up Google Analytics to get valuable insights about your space and visitors.
+## 🚀 Ishga tushirish
+- HTML/CSS loyihalar → `index.html` faylini brauzerda oching  
+- React / Backend loyihalar → `npm install && npm run dev`  
+- Python loyihalar → `python main.py`
+## 🚀 How to Run Locally
+```bash
+git clone https://github.com/<your-username>/fcc-fullstack-labs
+cd fcc-fullstack-labs
 
-⛑ Need support?
-Join our Discord community and ask questions in the #spaces-general channel.
+---
 
-🚀 Upgrade to Pro
-Upgrade your account to boost your space and take your projects to the next level; more requests, more storage and more power for up to 10 spaces.
+## 📌 Maqsad
+- Har kursni yakunlaganim sari GitHub’da tartibli portfolio qilib borish  
